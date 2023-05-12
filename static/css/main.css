@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+}
+
+.container {
+    margin: 35px 35px;
+}
+
+.header-top {
+    max-height: 90px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 23px;
+    justify-content-center:
+}
+
+
+.nav-bar a {
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #000;
+}
+
+.aligncenter {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.special-text {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 30px;
+}

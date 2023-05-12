@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Все записи на сайте
+{% endblock %}
+
+{% block body %}
+<h1 class="aligncenter">Записи</h1>
+    {% if articles|length > 0 %}
+        {%  for el in articles %}
+        <div class="alert alert-info">
+            <h2>Название: {{ el.title }}</h2>
+            <p><b>Количество шагов: {{ el.steps }}</b></p>
+            <p><b>Дата: {{ el.date }}</b></p>
+            <a href="/posts/{{ el.id }}" class="btn btn-warning">Подробнее</a>
+        </div>
+        {%  endfor  %}
+    {% else %}
+    <h2 class="aligncenter">Записей ещё нет</h2>
+{% endif %}
+{% endblock %}

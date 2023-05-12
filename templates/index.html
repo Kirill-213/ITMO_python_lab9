@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Главная страница
+{% endblock %}
+
+{% block body %}
+    <div class="aligncenter">
+        <h1>Счётчик шагов</h1>
+            {% if articles|length > 0 %}
+                {% set sum = [0] %}
+                    {% for el in articles %}
+                        {% if sum.append(sum.pop() + el["steps"]) %}{% endif %}
+                    {% endfor %}
+        <p class="special-text"><b>Суммарное количество шагов: {{ sum[0] }}</b></p>
+           {% else %}
+           <h2 class="aligncenter">Добавьте запись</h2>
+        {% endif %}
+        <img src="{{url_for('static', filename='logo.png')}}">
+        <h2>Выполнил: Васильев К.И, группа: R3135, ISU: 367964</h2>
+    </div>
+{% endblock %}

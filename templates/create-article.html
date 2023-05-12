@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Создание записи
+{% endblock %}
+
+{% block body %}
+<h1 class="aligncenter">Создание записи</h1>
+<form method="post">
+    <input type="text" name="title" id="title" class="form-control" placeholder="Введите название: "><br>
+    <input type="text" name="date" id="date" class="form-control" placeholder="Введите дату: dd.mm.yyyy"><br>
+    <input type="number" name="steps" id="steps" class="form-control" placeholder="Введите кол-во шагов: "><br>
+    <input type="submit" class="btn btn-success" value="Отправить"><br>
+</form>
+{% endblock %}
