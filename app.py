@@ -1,3 +1,5 @@
+# Vasilev Kirill, R3135, ISU: 367964
+# Variant: 4
 from flask import Flask, render_template, url_for, request, redirect
 from flask_sqlalchemy import SQLAlchemy
 
